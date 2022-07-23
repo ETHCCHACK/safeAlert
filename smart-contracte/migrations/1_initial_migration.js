@@ -1,5 +1,5 @@
-const Migrations = artifacts.require("Migrations");
+const Migrations = artifacts.require("safeAlert");
 
-module.exports = function (deployer) {
-  deployer.deploy(Migrations);
+module.exports = function (deployer,accounts) {
+  deployer.deploy(Migrations,{from:accounts[0]});
 };
