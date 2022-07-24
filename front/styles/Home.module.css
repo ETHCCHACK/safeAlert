@@ -1,0 +1,140 @@
+.formBox,
+.inbox {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  font-family: "Adelle Sans";
+  font-size: 16px;
+  color: #fff;
+  padding: 32px;
+}
+
+.formBox {
+  border: 3px dashed white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.inbox {
+  border: 2px solid white;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCol {
+  display: flex;
+  direction: column;
+  align-items: center;
+}
+
+.flexRow {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+}
+
+.signoutLink a {
+  padding: 16px;
+}
+
+.inbox h1 {
+  font-size: 28px;
+  font-family: "Adelle Sans Semibold";
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.inbox p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.inboxcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.uploadbutton-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.formBox input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 3px solid rgba(63,70,255,1);
+  margin: 16px;
+}
+
+.formBox input::placeholder {
+  color: #160b45;
+  opacity: 0.7;
+}
+
+.sendtext,
+.destination,
+.sendcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  max-width: 322px;
+  font-family: "Adelle Sans";
+  font-size: 14px;
+}
+
+.icon {
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  color: inherit;
+}
+
+.ethAddress {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  padding: 10px;
+}
+
+.errorMsg {
+  margin-top: 18px;
+  color: #ff8271;
+}
+
+.safe_style {
+  position: fixed;
+  left: -10vw;
+  width: 120vw;
+  height: 120vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../public/purple-back.png");
+  top: 50%;
+  z-index: -1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) translateY(-50%);
+  }
+  to {
+    transform: rotate(1440deg) translateY(-50%);
+  }
+}
+
+.soumission{
+  margin-top: 50px!important;
+  visibility: hidden;
+}

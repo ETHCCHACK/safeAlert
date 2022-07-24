@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Adelle Sans";
+  background-color: white;
+  color: #282c34;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #ff8271;
+}
+
+label {
+  display: block;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Adelle Sans";
+  src: url("../public/fonts/AdelleSans-Regular.woff2") format("woff2"),
+    url("../public/fonts/AdelleSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adelle Sans Semibold";
+  src: url("../public/fonts/AdelleSans-Semibold.woff2") format("woff2"),
+    url("../public/fonts/AdelleSans-Semibold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+button {
+  font-family: inherit; /* For all browsers */
+  font-size: 18px; /* For all browsers */
+  margin: 0; /* Firefox and Safari have margin */
+  overflow: visible; /* Edge hides overflow */
+  text-transform: none; /* Firefox inherits text-transform */
+  -webkit-appearance: button; /* Safari otherwise prevents some styles */
+  transition: 150ms ease-in-out, transform 100ms ease;
+  cursor: pointer;
+  border: none;
+
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(90deg, rgba(219,170,255,1) 0%, rgba(63,70,255,1) 100%);
+  border: 1px solid rgba(63,70,255,1);
+  padding: 8px 16px;
+}
+
+button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+button:focus {
+  border: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
