@@ -1,0 +1,10 @@
+
+
+type AlertSent @entity {
+  id: ID!
+  user:Bytes!
+  dateSent:BigInt!
+  isAccepted: Boolean!
+  dateAccepted:BigInt
+  quality:Int
+}
